@@ -53,24 +53,19 @@ if(BUILD_TESTING)
 
     add_executable(tests tests/basket_test.cpp)
 
-    # Добавление необходимых исходников и заголовочных файлов
     target_sources(tests PRIVATE
         Basket/basket.cpp
         additional.h
     )
 
-    # Указываем директорию, где находятся заголовочные файлы
     target_include_directories(tests PRIVATE
         ${CMAKE_CURRENT_SOURCE_DIR}/Basket
     )
 
-    # Линкование с библиотеками Qt
     target_link_libraries(tests PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
 
-    # Регистрация теста в CTest
     add_test(NAME MyTests COMMAND tests)
 
-    # Запуск тестов после сборки
     add_custom_command(
         TARGET tests POST_BUILD
         COMMAND $<TARGET_FILE:tests>
