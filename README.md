@@ -29,7 +29,7 @@
 1. Убедитесь, что у вас установлен **Qt 5.x**, **Qt Creator**, **gcc**(на других компиляторах не тестировалось).
 2. Склонируйте репозиторий:
 ```bash
-  git clone 
+  git clone https://github.com/Menoitami/RADAR_Baskets.git
 ```
 3. откройте и соберите проект:
 ```bash
