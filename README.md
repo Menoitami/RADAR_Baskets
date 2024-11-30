@@ -38,3 +38,7 @@
    cmake ..
    cmake --build .
 ```
+4. Запустите проект
+```bash
+BasketChance
+```
