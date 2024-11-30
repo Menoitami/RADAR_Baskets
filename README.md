@@ -29,7 +29,7 @@
 1. Убедитесь, что у вас установлен **Qt 5.x**, **Qt Creator**, **gcc**(на других компиляторах не тестировалось).
 2. Склонируйте репозиторий:
 ```bash
-   git clone https://github.com/username/BasketChance.git
+  git clone https://github.com/username/BasketChance.git
 ```
 3. откройте и соберите проект:
 ```bash
