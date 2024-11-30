@@ -26,7 +26,15 @@
 ## Установка и запуск
 
 ### Сборка проекта
-1. Убедитесь, что у вас установлен **Qt 5.x** и **Qt Creator**.
+1. Убедитесь, что у вас установлен **Qt 5.x**, **Qt Creator**, **gcc**(на других компиляторах не тестировалось).
 2. Склонируйте репозиторий:
-   ```bash
+```bash
    git clone https://github.com/username/BasketChance.git
+```
+3. откройте и соберите проект:
+```bash
+   mkdir build
+   cd build
+   cmake ..
+   cmake --build .
+```
